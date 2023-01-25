@@ -1,6 +1,10 @@
 #include<cstdio>
 #include<cstdlib>
 
+// NOTE: Please see below for global variables.
+// https://community.synopsys.com/s/question/0D52H00005wuoUySAI/will-coverity-treat-global-variables-in-c-as-zeroinitialized
+// https://community.synopsys.com/s/article/Coverity-Analysis-can-not-find-defects-in-a-function-that-uses-global-variables
+
 int g1;
 static int g2;
 
