@@ -7,9 +7,14 @@ int main()
 	char *p;
 
 	p = (char *)malloc(sizeof(char) * 5);
+	if (p == nullptr) {
+		return EXIT_FAILURE;
+	}
 
 	printf("%s\n", a);
 	printf("%s\n", p);
+
+	free(p);
 
 	return EXIT_SUCCESS;
 }
