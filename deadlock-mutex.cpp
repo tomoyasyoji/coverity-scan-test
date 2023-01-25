@@ -18,7 +18,8 @@ void Counter::add(int x)
 	// std::lock_guard<std::mutex> lock(mtx_);
 	mtx_.lock();
 	count_ += x;
-	// mtx_.unlock();
+	print();
+	mtx_.unlock();
 }
 
 void Counter::print()
@@ -26,7 +27,7 @@ void Counter::print()
 	// std::lock_guard<std::mutex> lock(mtx_);
 	mtx_.lock();
 	printf("count_ = %d\n", count_);
-	// mtx_.unlock();
+	mtx_.unlock();
 }
 
 void add_n_times(Counter &c, const int n)
