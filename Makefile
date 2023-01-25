@@ -9,7 +9,7 @@ TARGETS		= \
 	buffer-overflow-heap \
 	deadlock-mutex
 CXX		= g++
-CXXFLAGS	= -Wall -lpthread
+CXXFLAGS	= -Wall -pthread
 
 .PHONY: all
 all: $(TARGETS)
