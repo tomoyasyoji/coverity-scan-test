@@ -1,5 +1,6 @@
 TARGETS		= \
 	uninitialized-variable \
+	uninitialized-memory \
 	read-nullptr \
 	read-unallocated-memory \
 	write-nullptr \
