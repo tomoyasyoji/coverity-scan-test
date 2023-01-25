@@ -35,7 +35,7 @@ void add_n_times(Counter &c, const int n)
 		c.add(1);
 }
 
-int main(int argc, char *argv[])
+int main()
 {
 	Counter c;
 

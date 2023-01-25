@@ -3,7 +3,7 @@
 
 #define ARRAY_SIZE	5
 
-int main(int argc, char *argv[])
+int main()
 {
 	int a[ARRAY_SIZE] = {1, 2, 3, 4, 5};
 

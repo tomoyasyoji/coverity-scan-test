@@ -3,7 +3,7 @@
 
 #define ARRAY_SIZE	5
 
-int main(int argc, char *argv[])
+int main()
 {
 	int *a = (int *)malloc(sizeof(int) * ARRAY_SIZE);
 
