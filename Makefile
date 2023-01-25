@@ -5,9 +5,10 @@ TARGETS		= \
 	write-nullptr \
 	write-unallocated-memory \
 	buffer-overflow-stack \
-	buffer-overflow-heap
+	buffer-overflow-heap \
+	deadlock-mutex
 CXX		= g++
-CXXFLAGS	= -Wall
+CXXFLAGS	= -Wall -lpthread
 
 .PHONY: all
 all: $(TARGETS)
