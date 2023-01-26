@@ -7,6 +7,8 @@ TARGETS		= \
 	write-unallocated-memory \
 	buffer-overflow-stack \
 	buffer-overflow-heap \
+	buffer-overflow-read \
+	buffer-overflow-write \
 	deadlock-mutex
 CXX		= g++
 CXXFLAGS	= -Wall -pthread
